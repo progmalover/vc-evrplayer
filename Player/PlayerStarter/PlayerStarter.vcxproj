@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5C60E850-25F8-4960-8704-75C912BF00A7}</ProjectGuid>
+    <RootNamespace>Player</RootNamespace>
+    <SccProjectName>Perforce Project</SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>..\..</SccLocalPath>
+    <SccProvider>MSSCCI:Perforce SCM</SccProvider>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC70.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/S3Signage.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdlibs/include;$(SolutionDir)SupportLib;$(SolutionDir);$(SolutionDir)SupportLib/DShowBaseClasses;$(SolutionDir)../MAMMD3D_Player/MAMMD3D9</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>CrashRptd.lib;tinyxmld.lib;strmiids.lib;winmm.lib;quartz.lib;d3d9.lib;..\dxguid.lib;mfuuid.lib;libhasp_windows_105338.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdlibs/lib;$(OutDir)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>2097152</StackCommitSize>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/S3Signage.tlb</TypeLibraryName>
+    </Midl>
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdlibs/include;$(SolutionDir)SupportLib;$(SolutionDir);$(SolutionDir)SupportLib/DShowBaseClasses;$(SolutionDir)../MAMMD3D/MAMMD3D9</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>STARTER_EDITION;WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>Default</CompileAs>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>CrashRpt.lib;tinyxml.lib;strmiids.lib;winmm.lib;quartz.lib;d3d9.lib;..\dxguid.lib;mfuuid.lib;libhasp_windows_105338.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>$(SolutionDir)/3rdlibs/lib;$(OutDir)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <StackReserveSize>2097152</StackReserveSize>
+      <StackCommitSize>2097152</StackCommitSize>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AttributeParser.cpp" />
+    <ClCompile Include="..\EVRHelpers.cpp" />
+    <ClCompile Include="..\EVRPresentEngine.cpp" />
+    <ClCompile Include="..\EVRPresenter.cpp" />
+    <ClCompile Include="..\EVRscheduler.cpp" />
+    <ClCompile Include="..\S3ArcObj.cpp" />
+    <ClCompile Include="..\S3D2D.cpp" />
+    <ClCompile Include="..\S3D3DMath.cpp" />
+    <ClCompile Include="..\S3DShowSubGraph.cpp" />
+    <ClCompile Include="..\S3DShowWizard.cpp" />
+    <ClCompile Include="..\S3EVRSubGraph.cpp" />
+    <ClCompile Include="..\S3EVRWizard.cpp" />
+    <ClCompile Include="..\S3LicenseControl.cpp" />
+    <ClCompile Include="..\S3ObjectContainer.cpp" />
+    <ClCompile Include="..\S3PluginObj.cpp" />
+    <ClCompile Include="..\S3RectObj.cpp" />
+    <ClCompile Include="..\S3RenderableObject_i.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\S3SignagePipe.cpp" />
+    <ClCompile Include="..\S3SignageSession.cpp" />
+    <ClCompile Include="..\S3MovieObj.cpp" />
+    <ClCompile Include="..\S3RenderableObject.cpp" />
+    <ClCompile Include="..\S3RenderEngine.cpp" />
+    <ClCompile Include="..\S3RenderMixer.cpp" />
+    <ClCompile Include="..\S3RenderScheduler.cpp" />
+    <ClCompile Include="..\S3Signage.cpp" />
+    <ClCompile Include="..\S3SoundObj.cpp" />
+    <ClCompile Include="..\S3TextFileObj.cpp" />
+    <ClCompile Include="..\S3TransitionProvider.cpp" />
+    <ClCompile Include="..\S3Utility.cpp" />
+    <ClCompile Include="..\S3VMRSubgraph.cpp" />
+    <ClCompile Include="..\S3VMRWizard.cpp" />
+    <ClCompile Include="..\stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\AttributeParser.h" />
+    <ClInclude Include="..\EVRHelpers.h" />
+    <ClInclude Include="..\EVRPresentEngine.h" />
+    <ClInclude Include="..\EVRPresenter.h" />
+    <ClInclude Include="..\EVRPresenterInclude.h" />
+    <ClInclude Include="..\EVRPresenterUuid.h" />
+    <ClInclude Include="..\EVRscheduler.h" />
+    <ClInclude Include="..\Resource.h" />
+    <ClInclude Include="..\S3ArcObj.h" />
+    <ClInclude Include="..\S3D2D.h" />
+    <ClInclude Include="..\S3D3DMath.h" />
+    <ClInclude Include="..\S3DShowSubGraph.h" />
+    <ClInclude Include="..\S3DShowWizard.h" />
+    <ClInclude Include="..\S3EVRSubGraph.h" />
+    <ClInclude Include="..\S3EVRWizard.h" />
+    <ClInclude Include="..\S3LicenseControl.h" />
+    <ClInclude Include="..\S3ObjectContainer.h" />
+    <ClInclude Include="..\S3PluginObj.h" />
+    <ClInclude Include="..\S3RectObj.h" />
+    <ClInclude Include="..\S3RenderableObjectguids.h" />
+    <ClInclude Include="..\S3RenderableObject_h.h" />
+    <ClInclude Include="..\S3SignagePipe.h" />
+    <ClInclude Include="..\S3SignageSession.h" />
+    <ClInclude Include="..\s3escape.h" />
+    <ClInclude Include="..\S3MovieObj.h" />
+    <ClInclude Include="..\S3RenderableObject.h" />
+    <ClInclude Include="..\S3RenderEngine.h" />
+    <ClInclude Include="..\S3RenderMixer.h" />
+    <ClInclude Include="..\S3RenderScheduler.h" />
+    <ClInclude Include="..\S3Signage.h" />
+    <ClInclude Include="..\S3SignageSetting.h" />
+    <ClInclude Include="..\S3SoundObj.h" />
+    <ClInclude Include="..\S3TextFileObj.h" />
+    <ClInclude Include="..\S3TransitionProvider.h" />
+    <ClInclude Include="..\S3Utility.h" />
+    <ClInclude Include="..\S3VMRSubgraph.h" />
+    <ClInclude Include="..\S3VMRWizard.h" />
+    <ClInclude Include="..\stdafx.h" />
+    <ClInclude Include="..\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Res\Logo.bmp" />
+    <None Include="..\Res\S3G_logo.bmp" />
+    <None Include="..\Res\S3Signage.ico" />
+    <None Include="..\Res\S3Signage.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\S3Signage.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SupportLib\CommonLib\CommonLib.vcxproj">
+      <Project>{0806eb76-650b-4f74-b50d-ddc0a0e56ad1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SupportLib\CommonUI\CommonUI.vcxproj">
+      <Project>{b8b2338a-60da-45ad-acdf-6e640a4ac4d5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SupportLib\DShowBaseClasses\BaseClasses.vcxproj">
+      <Project>{31f273df-e6a3-4a78-b9e2-7a6d9ce59cc7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SupportLib\Localization\Localization.vcxproj">
+      <Project>{cb83af97-43cc-49ee-b8ab-90c3d36b5406}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\SupportLib\Utilities\Utilities.vcxproj">
+      <Project>{9a6cfbd6-9347-47d6-9121-4ac3e81bb0e1}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="S3Signage.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

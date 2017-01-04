@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Player", "Player.vcproj", "{90AD9F78-61DD-438A-99CB-3F8CB3C4F175}"
+	ProjectSection(ProjectDependencies) = postProject
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B} = {34B6C544-4C51-4BA1-B3E1-C681B4135F6B}
+		{CAC7EB48-967E-476D-B806-987ED7C51188} = {CAC7EB48-967E-476D-B806-987ED7C51188}
+		{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7} = {31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}
+		{BF93C1E9-446C-41D9-8444-20154A9DA782} = {BF93C1E9-446C-41D9-8444-20154A9DA782}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BaseClasses", "..\SupportLib\DShowBaseClasses\baseclasses.vcproj", "{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tinyxml", "..\SupportLib\tinyxml\tinyxml.vcproj", "{BF93C1E9-446C-41D9-8444-20154A9DA782}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MAMMD3D9", "..\..\MAMMD3D\MAMMD3D9\MAMMD3D9.vcproj", "{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Localization", "..\SupportLib\Localization\Localization.vcproj", "{CAC7EB48-967E-476D-B806-987ED7C51188}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BF93C1E9-446C-41D9-8444-20154A9DA782} = {BF93C1E9-446C-41D9-8444-20154A9DA782}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = ..\\..
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		SccProjectFilePathRelativizedFromConnection0 = MagicView3\\Player\\
+		SccProjectUniqueName1 = ..\\SupportLib\\DShowBaseClasses\\baseclasses.vcproj
+		SccLocalPath1 = ..\\..
+		SccProjectFilePathRelativizedFromConnection1 = MagicView3\\SupportLib\\DShowBaseClasses\\
+		SccProjectUniqueName2 = ..\\SupportLib\\tinyxml\\tinyxml.vcproj
+		SccLocalPath2 = ..\\..
+		SccProjectFilePathRelativizedFromConnection2 = MagicView3\\SupportLib\\tinyxml\\
+		SccProjectUniqueName3 = ..\\..\\MAMMD3D\\MAMMD3D9\\MAMMD3D9.vcproj
+		SccLocalPath3 = ..\\..
+		SccProjectFilePathRelativizedFromConnection3 = MAMMD3D\\MAMMD3D9\\
+		SccProjectUniqueName4 = Player.vcproj
+		SccLocalPath4 = ..\\..
+		SccProjectFilePathRelativizedFromConnection4 = MagicView3\\Player\\
+		SccProjectUniqueName5 = ..\\SupportLib\\Localization\\Localization.vcproj
+		SccLocalPath5 = ..\\SupportLib\\Localization
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90AD9F78-61DD-438A-99CB-3F8CB3C4F175}.Debug|Win32.ActiveCfg = Debug|Win32
+		{90AD9F78-61DD-438A-99CB-3F8CB3C4F175}.Debug|Win32.Build.0 = Debug|Win32
+		{90AD9F78-61DD-438A-99CB-3F8CB3C4F175}.Release|Win32.ActiveCfg = Release|Win32
+		{90AD9F78-61DD-438A-99CB-3F8CB3C4F175}.Release|Win32.Build.0 = Release|Win32
+		{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}.Debug|Win32.Build.0 = Debug|Win32
+		{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}.Release|Win32.ActiveCfg = Release|Win32
+		{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}.Release|Win32.Build.0 = Release|Win32
+		{BF93C1E9-446C-41D9-8444-20154A9DA782}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BF93C1E9-446C-41D9-8444-20154A9DA782}.Debug|Win32.Build.0 = Debug|Win32
+		{BF93C1E9-446C-41D9-8444-20154A9DA782}.Release|Win32.ActiveCfg = Release|Win32
+		{BF93C1E9-446C-41D9-8444-20154A9DA782}.Release|Win32.Build.0 = Release|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Debug|Win32.Build.0 = Debug|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Release|Win32.ActiveCfg = Release|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Release|Win32.Build.0 = Release|Win32
+		{CAC7EB48-967E-476D-B806-987ED7C51188}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CAC7EB48-967E-476D-B806-987ED7C51188}.Debug|Win32.Build.0 = Debug|Win32
+		{CAC7EB48-967E-476D-B806-987ED7C51188}.Release|Win32.ActiveCfg = Release|Win32
+		{CAC7EB48-967E-476D-B806-987ED7C51188}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

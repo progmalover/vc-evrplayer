@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{c3e65187-bc4a-4103-aca9-45f70bcc30ea}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{6a3acfd5-acf9-48a9-8e61-1e64a146a8d8}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{b55326a2-ebab-451d-b42e-4ad9147cbf91}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Transition">
+      <UniqueIdentifier>{c3bd7042-1c2b-4f9d-958e-959296c0ce63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Transition">
+      <UniqueIdentifier>{7f49c501-df3e-4ef3-981b-d50a74f73e76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{e4d7f3ef-46f1-42ba-89c2-e4d920dc06ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{6232856f-d4f2-4024-96df-195d5749032e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RenderableObject">
+      <UniqueIdentifier>{08fd69c0-31d9-4d94-86f6-e4feda9ed5ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RenderableObject">
+      <UniqueIdentifier>{a82e3607-88a7-4b75-a75f-66f6e7c00569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RenderableObject\External">
+      <UniqueIdentifier>{0b3effca-dd72-4987-9e7c-62a1d1ebfd0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RenderableObject\External">
+      <UniqueIdentifier>{ad034bda-998a-4dcf-b914-d88f0b817181}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\S3RenderEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3RenderMixer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3Signage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3MovieObj.cpp">
+      <Filter>Source Files\RenderableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3SoundObj.cpp">
+      <Filter>Source Files\RenderableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3D2D.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3D3DMath.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3RenderScheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3VMRSubgraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3VMRWizard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3SignageSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3ObjectContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\AttributeParser.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3PluginObj.cpp">
+      <Filter>Source Files\RenderableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3RenderableObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3RenderableObject_i.c">
+      <Filter>Source Files\RenderableObject\External</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3TransitionProvider.cpp">
+      <Filter>Source Files\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3SignagePipe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3RectObj.cpp">
+      <Filter>Source Files\RenderableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3TextFileObj.cpp">
+      <Filter>Source Files\RenderableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3ArcObj.cpp">
+      <Filter>Source Files\RenderableObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3DShowSubGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3DShowWizard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EVRHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EVRPresentEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EVRPresenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\EVRscheduler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3EVRSubGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3EVRWizard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\S3LicenseControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\s3escape.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3RenderEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3RenderMixer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3Signage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3SoundObj.h">
+      <Filter>Header Files\RenderableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3MovieObj.h">
+      <Filter>Header Files\RenderableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3D2D.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3D3DMath.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3RenderScheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3VMRSubgraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3VMRWizard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3SignageSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3ObjectContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\AttributeParser.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3PluginObj.h">
+      <Filter>Header Files\RenderableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3RenderableObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3SignageSetting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3RenderableObject_h.h">
+      <Filter>Header Files\RenderableObject\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3RenderableObjectguids.h">
+      <Filter>Header Files\RenderableObject\External</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3TransitionProvider.h">
+      <Filter>Header Files\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3SignagePipe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3RectObj.h">
+      <Filter>Header Files\RenderableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3TextFileObj.h">
+      <Filter>Header Files\RenderableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3ArcObj.h">
+      <Filter>Header Files\RenderableObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3DShowSubGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3DShowWizard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3EVRSubGraph.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EVRHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EVRPresentEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EVRPresenter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EVRPresenterInclude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EVRPresenterUuid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\EVRscheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3EVRWizard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3Utility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\S3LicenseControl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Res\Logo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Res\S3Signage.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Res\S3Signage.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="..\Res\S3G_logo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\S3Signage.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

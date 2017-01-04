@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlayerStarter", "PlayerStarter.vcxproj", "{5C60E850-25F8-4960-8704-75C912BF00A7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DShowBaseClasses", "..\..\SupportLib\DShowBaseClasses\baseclasses.vcxproj", "{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tinyxml", "..\..\SupportLib\tinyxml\tinyxml.vcxproj", "{1B35E78D-E674-43F4-A41A-AABC733F5304}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MAMMD3D9", "..\..\..\MAMMD3D\MAMMD3D9\MAMMD3D9.vcxproj", "{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 4
+		SccProjectName0 = Perforce\u0020Project
+		SccLocalPath0 = ..\\..\\..
+		SccProvider0 = MSSCCI:Perforce\u0020SCM
+		SccProjectFilePathRelativizedFromConnection0 = MagicView3\\Player\\PlayerStarter\\
+		SccProjectUniqueName1 = ..\\..\\SupportLib\\DShowBaseClasses\\baseclasses.vcxproj
+		SccLocalPath1 = ..\\..\\SupportLib\\DShowBaseClasses
+		SccProjectUniqueName2 = ..\\..\\SupportLib\\tinyxml\\tinyxml.vcxproj
+		SccLocalPath2 = ..\\..\\SupportLib\\tinyxml
+		SccProjectUniqueName3 = ..\\..\\..\\MAMMD3D\\MAMMD3D9\\MAMMD3D9.vcxproj
+		SccLocalPath3 = ..\\..\\..
+		SccProjectFilePathRelativizedFromConnection3 = MAMMD3D\\MAMMD3D9\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C60E850-25F8-4960-8704-75C912BF00A7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5C60E850-25F8-4960-8704-75C912BF00A7}.Debug|Win32.Build.0 = Debug|Win32
+		{5C60E850-25F8-4960-8704-75C912BF00A7}.Release|Win32.ActiveCfg = Release|Win32
+		{5C60E850-25F8-4960-8704-75C912BF00A7}.Release|Win32.Build.0 = Release|Win32
+		{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31F273DF-E6A3-4A78-B9E2-7A6D9CE59CC7}.Release|Win32.ActiveCfg = Release|Win32
+		{1B35E78D-E674-43F4-A41A-AABC733F5304}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1B35E78D-E674-43F4-A41A-AABC733F5304}.Debug|Win32.Build.0 = Debug|Win32
+		{1B35E78D-E674-43F4-A41A-AABC733F5304}.Release|Win32.ActiveCfg = Release|Win32
+		{1B35E78D-E674-43F4-A41A-AABC733F5304}.Release|Win32.Build.0 = Release|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Debug|Win32.Build.0 = Debug|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Release|Win32.ActiveCfg = Release|Win32
+		{34B6C544-4C51-4BA1-B3E1-C681B4135F6B}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
